@@ -1,0 +1,579 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MSI</title>
+    <link
+    rel="stylesheet"
+    href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
+    integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS"
+    crossorigin="anonymous"
+  />
+  <link rel="stylesheet" href="./fontawesome/css/all.css">
+  <style>
+      .navbar{
+          width: 100%;
+          height: 100px;
+          padding-left: 70px;
+          padding-right: 70px;
+          /* background-color: rgb(45, 224, 180); */
+          /* outline:1px solid red ; */
+      }
+      .navbar-fram{
+          
+      }
+      .container{
+          /* outline:1px,solid red ; */
+      }
+      .row{
+        /* outline: rgb(80, 20, 220) 2px solid; */
+        display: flex;
+      }
+
+    .logo{
+        /* outline: rgb(37, 220, 20) 2px solid; */
+    }
+    .nav-detail{
+        display: flex;
+    }
+    .nav-detail-content{
+        margin-left: 40px;
+        font-size: 1.2em;
+        /* outline: rgb(37, 220, 20) 2px solid; */
+    }
+    .nav-detail-content-a{
+        color: #000;
+        
+        /* outline: 3px solid red; */
+        text-decoration:none;
+    }
+    .nav-btn{
+        display: flex;
+        width: 100px;
+        float: right;
+        margin-left: 150px;
+        /* outline: rgb(73, 20, 220) 2px solid; */
+    }
+    .nav-btn-content{
+        margin-left: 30px;
+        font-size: 25px;
+        color: rgb(163, 163, 163);
+        /* outline: rgb(37, 220, 20) 2px solid; */
+    }
+    .nav-btn-content-a{
+        color: rgb(175, 170, 170);
+        
+        /* outline: 3px solid red; */
+        text-decoration:none;
+    }
+    .carousel{
+        width: 100%;
+        height: auto;
+        margin-top:30px; 
+        /* outline: solid red 10px; */
+    }
+    .fram{
+        width: 100%;
+        height: 500px;
+        /* background-color: rgb(165, 31, 31); */
+        /* position: relative; */
+        /* overflow: hidden; */
+        
+    }
+    .carousel-img{
+        width: 100%;
+        height: 500px;
+        object-fit: cover;
+    }
+    .product{
+        
+    }
+    .product-fram{
+        width: 100%;
+        height: 300px;
+        background-color: rgb(83, 83, 83);
+        display: flex;
+        /* justify-content: space-around; */
+    }
+    .product-img{
+        /* outline: solid black 1px; */
+        width: 475px;
+        height: 300px;
+        border:solid rgb(83, 83, 83) 2.5px;
+        object-fit: cover;
+    }
+    .content-farm{
+        /* height: 300px; */
+
+        overflow:hidden;
+        /* background-color: rgb(207, 15, 15); */
+        /* outline: solid blue 2px; */
+        display: flex;
+        
+    }
+ 
+
+    .content-img{
+        opacity: .4;
+        
+    }
+    .content-img:hover{
+        
+        opacity: 1;
+        
+    }
+    .content-img2 {
+        opacity: 1;
+    }
+    .content-img-farm1{
+        position: relative;
+        width: 50%;
+        height: 300px;
+        background-repeat:no-repeat;
+        background-position: center center;
+        background-size: cover;
+        background-image: url(./img/msi-content-01.jpeg);
+        border: white solid 2.5px;
+        /* outline: solid blue 5px; */
+   
+    }
+    .server{
+        position:absolute;
+        
+        /* margin:10px auto 50px auto ; */
+        /* outline: 3px solid red; */
+    }
+    .product-icon{
+        width: 100px;
+        height: 100px;
+        /* background-color: rgb(51, 32, 219); */
+        /* outline: 3px solid red; */
+        background-image: url(./img/msi-icon_poduc01.svg);
+    }
+    .service-title{
+        /* position:absolute; */
+        width: 100%;
+        margin-top: 160px;
+        margin-right: 100px;
+        text-align: center;
+        font-size: 27.5px;
+        font-weight: 0.1px;
+        /* outline: 3px solid red; */
+        
+    }
+    .service-description{
+        width: 100%;
+        text-align: center;
+    }
+
+    .content-img-farm2{
+        position: relative;
+        width: 50%;
+        height: 300px;
+        background-repeat:no-repeat;
+        background-position: center center;
+        background-size: cover;
+        background-image: url(./img/msi-content-02.jpeg);
+        border: white solid 2.5px;
+
+    }
+    .server{
+        position:absolute;
+        top: 60px;
+        left: 300px;
+    }
+    .server-icon{
+        width: 100px;
+        height: 100px;
+        /* background-color: rgb(167, 37, 37); */
+        background-image: url(./img/msi-icon_support02.svg);
+    }
+    .content2-farm{
+        overflow:hidden;
+        /* background-color: rgb(207, 15, 15); */
+        display: flex;
+    }
+
+ 
+    .content2-img-farm1{
+        position: relative;
+        width: 25%;
+        height: 230px;
+        background-repeat:no-repeat;
+        background-position: center center;
+        background-size: cover;
+        background-image: url(./img/content2-1.jpeg);
+        border: white solid 2.5px;
+        text-align: center;
+        line-height: 230px;
+        letter-spacing: 2.5px;
+        font-weight: 50px;
+        
+        
+       
+    }
+
+    .content2-img-farm2{
+        width: 25%;
+        height: 230px;
+        background-repeat:no-repeat;
+        background-position: center center;
+        background-size: cover;
+        background-image: url(./img/content2-2.jpeg);
+        border: white solid 2.5px;
+        text-align: center;
+        line-height: 230px;
+        letter-spacing: 2.5px;
+       
+    }
+    .content2-img-farm3{
+        width: 25%;
+        height: 230px;
+        background-repeat:no-repeat;
+        background-position: center center;
+        background-size: cover;
+        background-image: url(./img/content2-3.jpeg);
+        border: white solid 2.5px;
+        text-align: center;
+        line-height: 230px;
+        letter-spacing: 2.5px;
+       
+    }
+    .content2-img-farm4{
+        width: 25%;
+        height: 230px;
+        background-repeat:no-repeat;
+        background-position: center center;
+        background-size: cover;
+        background-image: url(./img/content2-4.jpeg);
+        border: white solid 2.5px;
+        text-align: center;
+        line-height: 230px;
+        letter-spacing: 2.5px;
+        
+    }
+    .msi-link{
+        color: #000;
+        font-size: 25px;
+        /* outline: 3px solid red; */
+        text-decoration:none;
+        
+    }
+    a{
+        text-decoration:none;
+    }
+    .msi-link:hover{
+        color: white;
+        text-decoration:none;
+    }
+    .content-img2{
+        opacity: .4;
+    }
+    .content-img2:hover{
+        opacity: 1;
+        color: white;
+    }
+
+
+            /*以下為rwd手機版*/
+    .rwdheader{
+        height: 50px;
+        /* background-color: thistle; */
+        display: flex;
+        position: relative;
+    }
+    rwdnav{
+        width: 100%;
+        height: calc(100vh - 50px);
+        /* background-color: rgb(202, 241, 92); */
+        position: absolute;
+        top: 50px;
+        left: -100%;
+        transition: .5s;
+    }
+    rwdnav a{
+        display: block;
+        text-decoration: none;
+        color: rgb(3, 3, 3);
+        padding: 6.5px 20px;
+        font-size: 10px;
+
+    }
+    #rwdnavbar-control{
+        position: absolute;
+        /* z-index: 2; */
+        opacity: 0;
+    }
+    .rwdnavbar-btn{
+        width: 40px;
+        height: 40px;
+        /* background-color: black; */
+        top: 5px;
+        position: absolute;
+    }
+    .rwdnavbar-btn::before{
+        content: '';
+        position: absolute;
+        height: 2px;
+        width: 36px;
+        background-color: rgb(153, 151, 151);
+        border-radius: 20px;
+        top:0px;
+        bottom: 0px;
+        left: 7.5px;
+        margin: auto;
+        box-shadow: 0px 8px 0px rgb(153, 151, 151),0px -8px 0px rgb(153, 151, 151);
+    }
+    .rwdnavbar-btn span{
+        opacity: 0;
+    }
+    .rwdlogo{
+        width: 60px;
+        width: 40px;
+        margin: 0 auto;
+    }
+    .rwdlogo img{
+        vertical-align: middle;
+    }
+    .rwdlogo-1{
+        /* width: 60px;
+        height: 40px; */
+    }
+    #rwdnavbar-control:checked ~ rwdnavbar .rwdheader rwdnav{
+        left: 0px;
+        z-index: 5;
+        background-color: rgb(253, 253, 253);
+    }
+    .rwdnav-btn{
+        top: 15px;
+        right: 7.5px;
+        position: absolute;      
+        text-decoration: none;
+        
+    }
+    .rwdnav-btn-user{
+        margin-right: 5px;
+        color: rgb(153, 151, 151);
+    }
+    .rwdnav-btn-search{
+        color: rgb(153, 151, 151);
+    }
+    .rwd-carousel{
+ 
+    }
+    .rwd-carousel-fram{
+        width: 100%;
+        height: 200px;
+        /* background-color: darkgreen; */
+    }
+    .rwd-carousel-img{
+        width: 100%;
+        height: auto;
+        background-image: url(./img/rwd-carousel01.jpeg);
+        background-size: cover;
+   
+    }
+    @media screen and (min-width:768px){
+        .rwdnavbar{display: none;}
+        .rwd-carousel{display: none;}
+    }
+    @media screen and (max-width:768px){
+        .navbar{display: none;}
+        carousel{display: none;}
+        product{display: none;}
+        content{display: none;}
+        content2{display: none;}
+
+
+
+
+    }
+    
+
+
+
+  </style>
+</head>
+<body>
+    <input type="checkbox" id="rwdnavbar-control">
+    <rwdnavbar class="rwdnavbar">
+        <rwdheader class="rwdheader">
+            <label for="rwdnavbar-control" class="rwdnavbar-btn">
+                <span>選單</span>
+            </label>
+            <rwdnav>
+                <a href="" #="">線上商城</a>
+                <a href="" #="">產品資訊</a>
+                <a href="" #="">ODM方案</a>
+                <a href="" #="">社群媒體</a>
+                <a href="" #="">活動＆促銷</a>
+                <a href="" #="">支援服務</a>
+                <a href="" #="">網路預約售後服務</a>
+            </rwdnav>
+            <h1 class="rwdlogo">
+                <a href="#"><img class="rwdlogo-1" src="./img/msi-logo.png" alt=""></a>               
+            </h1>
+            <div class="rwdnav-btn">
+                <a class="rwdnav-btn-user" href="#"><i class="far fa-user"></i></a>
+                <a class="rwdnav-btn-search" href="#"><i class="fas fa-search"></i></a>
+            </div>
+        </rwdheader>
+    </rwdnavbar>
+
+    <rwd-carousel class="rwd-carousel">
+        <div class="rwd-carousel-fram">
+            <div id="rwd-carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                <ol class="carousel-indicators">
+                  <li data-target="#rwd-carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                  <li data-target="#rwd-carouselExampleIndicators" data-slide-to="1"></li>
+                  <li data-target="#rwd-carouselExampleIndicators" data-slide-to="2"></li>
+                </ol>
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img class="rwd-carousel-img" src="./img/rwd-carousel01.jpeg" class="d-block w-100" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <img class="rwd-carousel-img" src="./img/rwd-carousel02.jpeg" class="d-block w-100" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <img class="rwd-carousel-img" src="./img/rwd-carousel03.jpeg" class="d-block w-100" alt="...">
+                  </div>
+                </div>
+              </div>    
+
+        </div>
+    </rwd-carousel>
+
+
+    
+<navbar class="navbar">
+        <div class="row navbar-fram">
+            <div class="logo">
+                <img src="./img/msi-logo.png" alt="">
+            </div>
+            <div class="nav-detail">
+                <div class="shop nav-detail-content"><a class="nav-detail-content-a" href="#">線上商城</a></div>
+                <div class="product nav-detail-content"><a class="nav-detail-content-a" href="#">產品資訊</a></div>
+                <div class="odm nav-detail-content"><a class="nav-detail-content-a" href="#">ODM方案</a></div>
+                <div class="social nav-detail-content"><a class="nav-detail-content-a" href="#">社群媒體</a></div>
+                <div class="activity nav-detail-content"><a class="nav-detail-content-a" href="#">活動＆促銷</a></div>
+                <div class="service nav-detail-content"><a class="nav-detail-content-a" href="#">支援服務</a></div>
+                <div class="internet nav-detail-content"><a class="nav-detail-content-a" href="#">網路預約售後服務</a></div>
+            </div>
+            <div class="nav-btn ">
+                <div class="nav-btn-content member"><a class="nav-btn-content-a" href="#"><i class="far fa-user"></i></a></div>
+                <div class="nav-btn-content map"><a class="nav-btn-content-a" href="#"><i class="fas fa-map-marker-alt"></i></a></div>
+                <div class="nav-btn-content search"><a class="nav-btn-content-a" href="#"> <i class="fas fa-search"></i></a></div>
+            </div>
+        </div>
+</navbar>
+    
+
+<carousel class="carousel">
+  <div class="fram">
+    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators">
+          <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img class="carousel-img" src="./img/mis01.jpeg" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img class="carousel-img" src="./img/msi02.jpeg" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img class="carousel-img" src="./img/msi03.jpeg" class="d-block w-100" alt="...">
+          </div>
+        </div>
+      </div>    
+  </div>
+</carousel>
+
+
+<product>
+    <div class="product-fram">
+        <div>
+            <img class="product-img" src="./img/msi-product01.jpeg" alt="">
+        </div>
+        <div>
+            <img class="product-img" src="./img/msi-product02.jpeg" alt="">
+        </div>
+        <div>
+            <img class="product-img" src="./img/msi-product03.jpeg" alt="">
+        </div>
+    </div>
+</product>
+
+<content>
+    <div class="content-farm">
+        <div class="content-img content-img-farm1">
+            <div class="server">
+                
+                <div class="product-icon">
+                    
+                </div>
+ 
+            </div>
+            <div class="service-title">產品註冊</div>
+            <p class="service-description">活得促銷資訊與更多產品</p>
+        </div>
+        <div class="content-img content-img-farm2"> 
+            <div class="server">
+                
+                <div class="server-icon">
+                    
+                </div>
+            </div>
+            <div class="service-title">支援訊息</div>
+            <p class="service-description">為您訂做專屬的服務</p>
+        </div>
+
+    </div>
+</content>
+
+<content2>
+    <div class="content2-farm">
+        <div class="content-img2 content2-img-farm1">
+             <a class="msi-link msi-link-1" href="#">微星論壇</a>                    
+        </div>
+        <div class="content-img2 content2-img-farm2">
+            <a class="msi-link msi-link-2" href="#">MSI會員獎勵計劃</a>
+        </div>
+        <div class="content-img2 content2-img-farm3">
+            <a class="msi-link msi-link-3" href="#">影片</a>
+        </div>
+        <div class="content-img2 content2-img-farm4">
+            <a class="msi-link msi-link-4" href="#">MSI Insider</a>
+        </div>
+    </div>
+</content2>
+
+
+
+
+    
+    
+  
+
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"
+      integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"
+      integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k"
+      crossorigin="anonymous"
+    ></script>
+</body>
+</html>
